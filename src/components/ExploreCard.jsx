@@ -26,7 +26,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => {
         <motion.div
           variants={fadeIn("top", "spring", 0.2, 1.75)}
           initial="hidden"
-          animate="show"
+          whileInView="show"
           className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]"
         >
           <div
