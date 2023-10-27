@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         eudoxusSans: ['var(--font-eudoxusSans)']
       },
+      boxShadow: {
+        'grande': '0px 0px 15px 3px'
+      }
     },
   },
   plugins: [],

@@ -25,7 +25,10 @@ export default function Page() {
         <div className="gradient-04 z-0" />
         <WhatsNew />
       </div>
-      <World />
+      <div className="relative">
+        <World />
+        <div className="gradient-02 z-0" />
+      </div>
       <div className="relative">
         <Insights />
         <div className="gradient-04 z-0" />
