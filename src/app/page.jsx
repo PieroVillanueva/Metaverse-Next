@@ -26,6 +26,7 @@ export default function Page() {
         <WhatsNew />
       </div>
       <div className="relative">
+        <div className="feedback-gradient z-0" />
         <World />
         <div className="gradient-02 z-0" />
       </div>
