@@ -9,7 +9,7 @@ const Hero = () => {
       <motion.div
         variants={staggerContainer}
         initial="hidden"
-        whileInView="show"
+        animate="show"
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div className="flex justify-center items-center flex-col relative z-10">

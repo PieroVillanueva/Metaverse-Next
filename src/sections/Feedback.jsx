@@ -9,8 +9,8 @@ const Feedback = () => {
       <motion.div
         variants={staggerContainer}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        animate="show"
+        viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col lg:flex-row gap-6`}
       >
         <motion.div
