@@ -21,7 +21,7 @@ module.exports = {
       },
       boxShadow: {
         'grande': '0px 0px 15px 3px'
-      }
+      },
     },
   },
   plugins: [],

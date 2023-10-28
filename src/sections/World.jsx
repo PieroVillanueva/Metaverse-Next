@@ -37,33 +37,37 @@ const World = () => {
 
           <motion.div
             variants={navVariants}
-            className="absolute top-[10%] left-[8%]   md:top-[15%]  md:left-[9%]   lg:top-[18%] lg:left-[12%]  w-[60px] h-[60px] p-[6px] rounded-full bg-[#5D6680] shadow-[#f29db0] shadow-grande cursor-pointer"
+            className="absolute top-[10%] left-[8%]   md:top-[15%]  md:left-[9%]   lg:top-[18%] lg:left-[12%]
+            w-[60px] h-[68px]  drop-shadow-[0px_0px_15px_#f29db0] cursor-pointer"
           >
-            <img src="/people-02.png" alt="people" className="w-full h-full" />
+            <img src="/persona2.png" alt="people" className="w-full h-full" />
           </motion.div>
 
           <motion.div
             variants={navVariants}
-            className="absolute top-[35%] right-[45%]   md:top-[40%] md:right-[48%]   lg:top-[45%] lg:right-[50%]  w-[60px] h-[60px] p-[6px] rounded-full bg-[#5D6680]  shadow-[#adb6d7] shadow-grande cursor-pointer"
+            className="absolute top-[35%] right-[45%]   md:top-[40%] md:right-[48%]   
+            lg:top-[45%] lg:right-[50%]  w-[60px] h-[68px]   drop-shadow-[0px_0px_15px_#adb6d7] cursor-pointer"
           >
-            <img src="people-03.png" alt="people" className="w-full h-full" />
+            <img src="persona3.png" alt="people" className="w-full h-full" />
           </motion.div>
 
           <motion.div
             variants={navVariants}
-            className="absolute bottom-[10%] right-[10%] md:bottom-[15%]  md:right-[9%]  w-[60px] h-[60px] p-[6px] rounded-full bg-[#5D6680] shadow-[#f6623e] shadow-grande cursor-pointer"
+            className="absolute bottom-[10%] right-[10%] md:bottom-[15%]  md:right-[9%]  
+            w-[60px] h-[68px] drop-shadow-[0px_0px_15px_#f6623e]  cursor-pointer"
           >
-            <img src="people-01.png" alt="people" className="w-full h-full" />
+            <img src="persona1.png" alt="people" className="w-full h-full" />
           </motion.div>
 
           <motion.div
             variants={fadeIn("down", "tween", 1.2, 0.8)}
-            className="absolute top-[10%] right-[22%] h-[150px] w-[220px] rounded-3xl p-1.5 bg-[#5D6680] shadow-[#4b85d6] shadow-grande hidden lg:block cursor-pointer"
+            className="absolute top-[10%] right-[22%] h-[150px] w-[220px] rounded-3xl p-2
+          bg-[rgba(255,255,255,15%)] hidden lg:block cursor-pointer "
           >
             <img
               src="/tarjeta2.png"
               alt="Hawkings Lab"
-              className="h-full w-full object-cover rounded-3xl "
+              className="h-full w-full object-cover rounded-3xl shadow-[rgba(75,133,214,0.8)] shadow-[0px_-0px_20px_10px] "
             />
             <div className="absolute top-[56%] left-[10%] ">
               <div className="flex flex-row gap-x-3 justify-start items-center ">
@@ -78,12 +82,13 @@ const World = () => {
 
           <motion.div
             variants={fadeIn("down", "tween", 1.5, 0.8)}
-            className="absolute bottom-[20%] left-[10%] h-[150px] w-[220px] rounded-3xl p-1.5 bg-[#5D6680] shadow-[#a34090] shadow-grande hidden lg:block cursor-pointer"
+            className="absolute bottom-[20%] left-[10%] h-[150px] w-[220px] 
+            rounded-3xl p-2 bg-[rgba(255,255,255,15%)]  hidden lg:block cursor-pointer"
           >
             <img
               src="/tarjeta1.png"
               alt="the upside down"
-              className="h-full w-full object-cover rounded-3xl "
+              className="h-full w-full object-cover rounded-3xl shadow-[rgb(163,64,144,0.8)] shadow-[0px_-0px_20px_10px]"
             />
             <div className="absolute top-[56%] left-[10%] ">
               <div className="flex flex-row gap-x-3 justify-start items-center ">
