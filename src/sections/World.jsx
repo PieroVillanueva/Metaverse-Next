@@ -11,7 +11,7 @@ const World = () => {
       <motion.div
         variants={staggerContainer}
         initial="hidden"
-        animate="show"
+        whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
@@ -37,8 +37,6 @@ const World = () => {
 
           <motion.div
             variants={navVariants}
-            initial="hidden"
-            whileInView="show"
             className="absolute top-[10%] left-[8%]   md:top-[15%]  md:left-[9%]   lg:top-[18%] lg:left-[12%]  w-[60px] h-[60px] p-[6px] rounded-full bg-[#5D6680] shadow-[#f29db0] shadow-grande cursor-pointer"
           >
             <img src="/people-02.png" alt="people" className="w-full h-full" />
@@ -46,8 +44,6 @@ const World = () => {
 
           <motion.div
             variants={navVariants}
-            initial="hidden"
-            whileInView="show"
             className="absolute top-[35%] right-[45%]   md:top-[40%] md:right-[48%]   lg:top-[45%] lg:right-[50%]  w-[60px] h-[60px] p-[6px] rounded-full bg-[#5D6680]  shadow-[#adb6d7] shadow-grande cursor-pointer"
           >
             <img src="people-03.png" alt="people" className="w-full h-full" />
@@ -55,8 +51,6 @@ const World = () => {
 
           <motion.div
             variants={navVariants}
-            initial="hidden"
-            whileInView="show"
             className="absolute bottom-[10%] right-[10%] md:bottom-[15%]  md:right-[9%]  w-[60px] h-[60px] p-[6px] rounded-full bg-[#5D6680] shadow-[#f6623e] shadow-grande cursor-pointer"
           >
             <img src="people-01.png" alt="people" className="w-full h-full" />
@@ -64,8 +58,6 @@ const World = () => {
 
           <motion.div
             variants={fadeIn("down", "tween", 1.2, 0.8)}
-            initial="hidden"
-            whileInView="show"
             className="absolute top-[10%] right-[22%] h-[150px] w-[220px] rounded-3xl p-1.5 bg-[#5D6680] shadow-[#4b85d6] shadow-grande hidden lg:block cursor-pointer"
           >
             <img
@@ -86,8 +78,6 @@ const World = () => {
 
           <motion.div
             variants={fadeIn("down", "tween", 1.5, 0.8)}
-            initial="hidden"
-            whileInView="show"
             className="absolute bottom-[20%] left-[10%] h-[150px] w-[220px] rounded-3xl p-1.5 bg-[#5D6680] shadow-[#a34090] shadow-grande hidden lg:block cursor-pointer"
           >
             <img
