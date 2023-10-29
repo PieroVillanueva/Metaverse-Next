@@ -13,9 +13,11 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => {
       } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
       onClick={() => handleClick(id)}
     >
-      <img
+      <Image
         src={imgUrl}
         alt={title}
+        width={1280}
+        height={800}
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
       {active !== id ? (

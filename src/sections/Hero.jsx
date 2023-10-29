@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -30,24 +31,31 @@ const Hero = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="relative w-full md:-mt-5 -mt-3"
         >
-          <img
+          <Image
             src="/cover.png"
             alt="cover"
+            width={1920}
+            height={1080}
+            priority={true}
             className="w-full sm:h-[450px] h-[300px] object-cover rounded-tl-[140px] z-10 -mt-3 "
           />
 
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px]  z-10">
-            <motion.img
-              variants={textVariant(1.3)}
+          <motion.div
+            variants={textVariant(1.3)}
+            className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px]  z-10"
+          >
+            <Image
               src="/stamp.png"
               alt="stamp"
+              width={130}
+              height={155}
               className="sm:w-[130px] w-[100px] sm:h-[155px] h-[100px] object-contain "
             />
             <a
               href="#explore"
               className="sm:w-[130px] w-[100px] sm:h-[155px] h-[100px] absolute z-20"
             />
-          </div>
+          </motion.div>
         </motion.div>
       </motion.div>
     </section>

@@ -20,8 +20,8 @@ const Navbar = () => {
         <Image
           src="/search.svg"
           alt="search"
-          height={50}
-          width={50}
+          height={24}
+          width={24}
           className="w-6 h-6 object-contain"
         />
         <h2 className="font-extrabold text-2xl leading-[30px] text-white">

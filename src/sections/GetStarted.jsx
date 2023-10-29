@@ -6,6 +6,7 @@ import { fadeIn, staggerContainer, planetVariants } from "../utils/motion";
 import { StartSteps, TitleText, TypingText } from "../components";
 
 import { startingFeatures } from "../constants";
+import Image from "next/image";
 
 const GetStarted = () => {
   return (
@@ -21,9 +22,11 @@ const GetStarted = () => {
           variants={planetVariants("left")}
           className={`flex-1 ${styles.flexCenter}`}
         >
-          <img
+          <Image
             src="/get-started.png"
             alt="get-started"
+            width={1280}
+            height={700}
             className="w-[90%] h-[90%] object-contain"
           />
         </motion.div>
