@@ -45,7 +45,7 @@ const Hero = () => {
             className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px]  z-10"
           >
             <Image
-              src="/stamp.png"
+              src="/stamp2.png"
               alt="stamp"
               width={130}
               height={155}
